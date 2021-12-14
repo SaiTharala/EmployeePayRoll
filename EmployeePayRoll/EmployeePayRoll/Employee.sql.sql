@@ -18,8 +18,3 @@ create table employee_payroll
   
   --UC4-Retrieve Data From Table
    select * from employee_payroll
-
-  --UC5 Selected Data Retrieve 1
-  select salary from employee_payroll where Emp_name = 'SPT'
-  select * from employee_payroll
-  where start between cast ('2019-03-02' as date) and getdate();
