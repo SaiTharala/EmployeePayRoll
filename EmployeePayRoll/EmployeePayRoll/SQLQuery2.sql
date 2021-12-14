@@ -2,7 +2,7 @@
 create database payroll_service1
 use payroll_service1
 
--- UC-2-create Database
+-- UC-2-creating Table
 create table employee_payroll
 ( emp_id int not null identity(1,1) primary key,
   Emp_name varchar(50),
