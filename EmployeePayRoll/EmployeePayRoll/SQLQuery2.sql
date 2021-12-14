@@ -30,3 +30,18 @@ create table employee_payroll
   update employee_payroll set gender = 'F' where Emp_name = 'SAM'
   update employee_payroll set gender = 'M' where Emp_name = 'ST' or Emp_name = 'SAMU'
 
+  --UC7-Aggregate Functions
+  select sum(salary) from employee_payroll where gender = 'M' group by gender
+  select sum(salary) from employee_payroll where gender = 'F' group by gender
+  
+  select avg(salary) from employee_payroll where gender = 'M' group by gender
+  select avg(salary) from employee_payroll where gender = 'M' group by gender
+  
+  select min(salary) from employee_payroll where gender = 'M' group by gender
+  select min(salary) from employee_payroll where gender = 'M' group by gender
+  
+  select max(salary) from employee_payroll where gender = 'M' group by gender
+  select max(salary) from employee_payroll where gender = 'M' group by gender
+  
+  select count(gender) from employee_payroll where gender = 'M' group by gender
+  select count(gender) from employee_payroll where gender = 'M' group by gender 
