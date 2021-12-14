@@ -16,3 +16,6 @@ create table employee_payroll
   ('Acc',7000000.00,'2021-12-12'),
   ('Cog',8000000.00,'2021-12-11')
   
+  --UC4-Retrieve Data From Table
+
+  select * from employee_payroll
