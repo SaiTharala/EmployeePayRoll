@@ -23,3 +23,10 @@ create table employee_payroll
   select salary from employee_payroll where Emp_name = 'SPT'
   select * from employee_payroll
   where start between cast ('2019-03-02' as date) and getdate();
+
+  --UC6-Alter Table
+  alter table employee_payroll add gender char(1)
+  update employee_payroll set gender = 'M' where Emp_name = 'TS'
+  update employee_payroll set gender = 'F' where Emp_name = 'SAM'
+  update employee_payroll set gender = 'M' where Emp_name = 'ST' or Emp_name = 'SAMU'
+
